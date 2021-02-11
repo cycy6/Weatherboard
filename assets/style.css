@@ -1,0 +1,65 @@
+body {
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: navy;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.container-fluid {
+    margin-right: 15px;
+}
+
+.searchCont {
+    padding: 25px;
+}
+
+#cityInput {
+    height: 50px;
+}
+
+#searchButton {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#searchButton:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+}
+
+.currentDay {
+    padding: 10px;
+    margin-top: 15px;
+}
+
+
+.fiveday {
+    text-align: center;
+    background-color: navy
+    padding: 10px;
+}
+
+h3 {
+    padding-bottom: 5px;
+}
+
+button {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #ffffff
+}

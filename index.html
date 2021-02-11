@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="assets/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header>
+    <h1><strong>Weather Dashboard</strong></h1>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- city search bar and previous search list -->
+      <div class="col-3 searchCont">
+        <h3>Search for a City:</h3>
+
+        <div class="input-group mb-3">
+          <input id="cityInput" type="text" class="form-control" placeholder="Enter your City" aria-label="CityName"
+            aria-describedby="basic-addon1">
+          <button id="searchButton"><i class="fab fa-searchengin"></i></button>
+        </div>
+
+        <!-- cities from search line up here -->
+        <ul id="searchedCities" class="list-group something"></ul>
+
+      </div>
+
+      <!-- today & 5 day forecast displayed here -->
+      <div class="col-9 currentDay">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+      <!-- current date weather displayed here -->
+            <h4 id="cityTitle" class="card-title"></h4>
+            <img id="weatherIcon" src=""/>
+            <p id="currentDate" class="card-text"></p>
+            <p id="temperature" class="card-text"></p>
+            <p id="humidity" class="card-text"></p>
+            <p id="wind" class="card-text"></p>
+            <p id="uvin" class="card-text"></p>
+          </div>
+        </div>
+        <br>
+        <div class="row fiveday">
+          <h3>5-Day Forecast</h3>
+          <!-- 5 day forecast  will be displayed here -->
+          <div class="card-group" id="fiveDay"> </div>
+
+       
+        <script src="assets/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+
+</html>
