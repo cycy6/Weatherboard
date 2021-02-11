@@ -40,7 +40,7 @@ async function searchCity(city) {
         document.getElementById("temperature").innerHTML = "Temperature: " + json.main.temp
         document.getElementById("humidity").innerHTML = "Humidity: " + json.main.humidity
         document.getElementById("wind").innerHTML = "Wind Speed: " + json.wind.speed
-        document.getElementById("weatherIcon").src = "http://openweathermap.org/img/w/" + json.weather[0].icon + ".png"
+        document.getElementById("weatherIcon").src = "https://openweathermap.org/img/w/" + json.weather[0].icon + ".png"
         // lat & lon to get the UV index 
         var lat = json.coord.lat
         var lon = json.coord.lon
