@@ -56,7 +56,7 @@ var APIkey = "91cefc20ce7f76578ed634d35fc73212";
 // function 5 day forecast into the HTML
 function forecast(city) {
     // 5 day forecast fetch
-    var forecastURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIkey + "&units=metric";
+    var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIkey + "&units=metric";
     fetch(forecastURL).then(response => response.json())
         .then(json => {
             console.log(json)
